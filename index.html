@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Simple Calculator</title>
+    <style>
+        body{
+            background-color: rgb(195, 122, 238);
+        }
+        h1{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgba(255, 255, 255, 0.664);
+            background-color: rgb(133, 69, 133);
+            text-shadow: 6px 6px 4px  rgb(182, 112, 248);
+            border-radius: 20px;
+            box-shadow: 6px 6px 4px rgba(255, 255, 255, 0.664);
+        }
+        #first{
+            margin:60px 100px 0px 450px;
+            padding:20px;
+            border: 5px solid rgb(147, 70, 219);
+            width:400px;
+            background-color:rgba(255, 255, 255, 0.664);
+            box-shadow: 12px 12px 4px rgb(143, 50, 161);
+        }
+        #inner{
+            border: 5px solid rgba(255, 255, 255, 0.664);
+            background-color:rgb(182, 112, 248) ;
+            border-radius: 10px;
+        }
+        #input{
+            height:30px;
+            width:350px;
+            color:rgb(157, 32, 182);
+            background-color:rgba(255, 255, 255, 0.664) ;
+            margin:5px;
+            margin-left: 15px;
+            border: 2px solid rgb(182, 112, 248);
+            font-size: 20px;
+            font-family:Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+        }
+        #inner button{
+            height:50px;
+            width: 50px;
+            margin:3px;
+            margin-left:34px;
+            color:rgba(255, 255, 255, 0.664);
+            background-color:rgb(182, 112, 248) ;
+            font-family:Arial, Helvetica, sans-serif ;
+            font-size: 20px;
+            border: 1px solid rgb(182, 112, 248);
+            text-emphasis:bold;
+        }
+        #inner button:hover{
+            color: blueviolet;
+            background-color: rgba(255, 255, 255, 0.664);
+            box-shadow: 6px 6px 4px  rgb(125, 85, 163);
+        }
+        #output{
+            height:30px;
+            width:300px;
+            color:rgb(157, 32, 182);
+            background-color:rgba(255, 255, 255, 0.664) ;
+            margin:5px;
+            margin-left: 40px;
+            border: 2px solid rgb(182, 112, 248);
+            font-size: 20px;
+            font-family:Arial, Helvetica, sans-serif;
+            border-radius: 10px;;
+        }
+
+        @media (max-width:600px){
+        #first{
+            margin:50px 0px 0px 55px;
+            padding:20px;
+            border: 5px solid rgb(147, 70, 219);
+            width:400px;
+            background-color:rgba(255, 255, 255, 0.664);
+            box-shadow: 12px 12px 4px rgb(143, 50, 161);
+        }
+        
+        }
+        @media (max-width:400px){
+        #first{
+            margin:70px 0px 0px 0px ;
+            padding:20px;
+            border: 5px solid rgb(147, 70, 219);
+            width:auto;
+            background-color:rgba(255, 255, 255, 0.664);
+            box-shadow: 12px 12px 4px rgb(143, 50, 161);
+        }
+        #input{
+            height:30px;
+            width:260px;
+        }
+         #output{
+            height:30px;
+            width:200px;
+        }
+         #inner button{
+            height:40px;
+            width: 40px;
+            margin:3px;
+            margin-left:20px;
+            font-size: 15px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>SIMPLE CALCULATOR</h1>
+    <div id="first">
+        <div id="inner">
+            <input type="text" id="input"><br>
+            <input type="text" id="output"><br>
+            <button id="one" value="1">1</button>
+            <button id="two" value="2">2</button>
+            <button id="three" value="3">3</button>
+            <button id="four" value="4">4</button><br>
+            <button id="five" value="5">5</button>
+            <button id="six" value="6">6</button>
+            <button id="seven" value="7">7</button>
+            <button id="eight" value="8">8</button><br>
+            <button id="C" value="C">C</button>
+            <button id="nine" value="9">9</button>
+            <button id="zero" value="0">0</button>
+            <button id="dot" value=".">.</button><br>
+            <button id="add" value="+">+</button>
+            <button id="sub" value="-">-</button>
+            <button id="multiply" value="*">*</button>
+            <button id="divide" value="/">/</button><br>
+            <button id="equal" value="=">=</button>
+            <button id="open" value="(">(</button>
+            <button id="close" value=")">)</button>
+            <button id="backspace" style="width:80px; font-size: 15px;" value="backspace">backspace</button>
+                
+        </div>
+    </div>
+
+    <script src="Calc.js">
+    </script>
+</body>
+</html>
